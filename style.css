@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 850px;
+    background-image: url(images/img1.png);
+}
+
+.container{
+    background-color: rgb(160, 205, 244);
+    padding:2rem;
+    border-radius: 1rem;
+    width: 270px;
+    min-height: 350px;
+    border: solid 2px rgb(55, 92, 125);
+}
+
+h2{
+    font-family: sans-serif;
+    font-size:1.5rem;
+    color:rgb(54, 47, 109);
+    text-align: center;
+}
+
+.curr{
+    color: rgb(0, 106, 206);
+    display:inline-block;
+    animation: pluse 2s ease-in-out infinite;
+}
+
+@keyframes pluse {
+    0%, 100%{opacity: 1;}
+    50% {opacity: 0.55;}
+}
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input{
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid aliceblue;
+    background-color: rgb(137, 191, 237);
+}
+
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+
+.msg{
+    width: 100%;
+    background-color: #fff;
+    margin: 2rem 0 2rem 0;
+    border-radius: 0.75rem;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+form button{
+    height: 3rem;
+    background-color: rgb(5, 99, 180);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+form button:hover{
+    background-color: rgb(7, 120, 215);
+    transform: translateY(-2px);
+}
